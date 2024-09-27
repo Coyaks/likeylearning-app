@@ -1,0 +1,78 @@
+================= START COMMANDS FLUTTER ===================
+* flutter pub get (Instalar dependencias)
+* Artefacto requerido para Google Play Console: .apk
+* Generar APK android
+    flutter build apk --release
+    fvm flutter build apk --release
+    fvm flutter build appbundle | (.aab)
+* Generar ARTEFACTO IOS
+    flutter build ios  (.ipa)
+* Generar icon app (Sirve para icon app) [Tiene que ser JPG para que funcione bien en iOS]
+flutter pub run flutter_launcher_icons:main     [1024 x 1024]
+flutter pub run flutter_native_splash:create (Sirve para flutter_native_splash) [1024 x 1024]
+
+================= END COMMANDS FLUTTER ===================
+
+================= BASIC CONCEPTS ===================
+* Mapear JSON en Model: https://app.quicktype.io/
+* Centrar row & colum: MainAxisAlignment VS CrossAxisAlignment in Flutter
+* Si vamos a trabajar trabajar con FVM, es necesario adicionar en el .gitignore: .fvm/flutter_sdk
+* Menu inferior, tipo app interbank: bottomNavigationBar
+* SIZE DE ICON DE LA CLASE Icons por default: 24
+* PADDING POR CADA SCAFFOLD: 20
+
+================= WIDGETS ===================
+
+=========TECNOLOGÍAS==========
+ ** PATRON DE ARCHITECTURA: MVC (English) (SEPARAR UN PROJECT EN BACKEND [logica de negocio] Y FRONTEND [UI])
+ ** PRUEBAS UNITARIAS: PHPUnit
+
+=========LOGIN WITH GOOGLE==========
+Es necesario agregar las huellas digitales SHA-1 en Firebase
+gradlew signingReport (Generar o ver huella digital SHA1 mediante consola en win [cd android] [FUNCIONA CORRECTAMENTE])
+
+=========LOGIN WITH GOOGLE iOS==========
+https://pub.dev/packages/google_sign_in_ios#ios-integration
+
+=========LOGIN WITH FB==========
+https://www.youtube.com/watch?v=yjeocwN-Cqo (VIDEO INSTRUCTIVO)
+
+* Docs official 'flutter_facebook_auth: ^6.0.4'
+https://facebook.meedu.app/docs/6.x.x/intro
+
+* PROJECT CHAT APP
+https://www.youtube.com/watch?v=mBBycL0EtBQ [Chat Messenger App • Full Tutorial from scratch / Flutter x Firebase]
+PROMT
+* chat app in flutter firebase
+
+https://www.youtube.com/watch?v=5xU5WH2kEc0 [FINAL $ 19]
+
+* CONVERSIONES
+int -> double: entero.toDouble();
+string -> double: double.parse(cadena);
+Esta base si incluye el permiso: com.google.android.gms.permission.AD_ID
+
+
+==========================================================================
+==========================================================================
+* Config Firebase CLI
+==========================================================================
+==========================================================================
+
+Preview
+
+
+firebase --version [check install firebase]
+npm install -g firebase-tools [install CLI]
+
+======================================================
+firebase login [01: Login] [firebase logout]
+dart pub global activate flutterfire_cli [02]
+flutterfire configure [03]
+======================================================
+
+***************** flutterfire_cli **********************
+IMPORTANT:
+- Configurar automáticamente Firebase sin necesidad de hacer ajustes manuales en los archivos android, ios, o web
+- Automatización de la configuración: El CLI se encarga de generar los archivos de configuración necesarios, como google-services.json para Android y GoogleService-Info.plist para iOS.
+- Comandos útiles: flutterfire configure

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "77079597590",
+    "project_id": "likeylearning",
+    "storage_bucket": "likeylearning.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:77079597590:android:33d7870add581c893f5b37",
+        "android_client_info": {
+          "package_name": "com.likeylearning.app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCJoxTMauhOwPMiD4Rnhxa3ki_qSvYaUPg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
